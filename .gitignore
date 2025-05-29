@@ -1,0 +1,7 @@
+*.sh
+Output/
+Examples/
+__pycache__/
+.DS_Store
+.env
+*_script.txt
