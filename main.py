@@ -12,7 +12,7 @@ parser.add_argument("--script", type=str, help="Path to script file to process")
 parser.add_argument("--speed", type=float, default=0.95)
 args = parser.parse_args()
 
-clone_from_text = "[S1] Dia is an open weights text to dialogue model. [S2] You get full control over scripts and voices. [S1] Wow. Amazing. [S2] Try it now on Git hub or Hugging Face."
+clone_from_text = "[S1] Dia is an open weights text to dialogue model. [S2] You get full control over scripts and voices."
 clone_from_audio = "sample.mp3"
 
 if args.context:
@@ -23,7 +23,7 @@ if args.context:
     print(f"Extracted text, generating script...")
     script, dialogues = generate_podcast_script(full_text)
     print(f"Script and dialogues generated")
-    with open(f"{file_name}_script.txt", "w", encoding="utf-8") as f:
+    with open(f"Examples/{file_name}_script.txt", "w", encoding="utf-8") as f:
         f.write(script)
 
 elif args.script:

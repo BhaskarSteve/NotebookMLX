@@ -1,0 +1,17 @@
+[project]
+name = "notebookmlx"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mlx>=0.25.2",
+    "mlx-lm>=0.24.1",
+    "nari-tts",
+    "pydub>=0.25.1",
+    "pypdf2>=3.0.1",
+    "torch>=2.6.0",
+]
+
+[tool.uv.sources]
+nari-tts = { git = "https://github.com/nari-labs/dia.git" }
