@@ -44,7 +44,7 @@ for i, dialogue in enumerate(dialogues):
 
 combined_audio = AudioSegment.from_wav("Output/dialogue_0.wav")
 silence = AudioSegment.silent(duration=400)
-for i in range(1, len(dialogues)+1):
+for i in range(1, len(dialogues)):
     combined_audio += silence
     combined_audio += AudioSegment.from_wav(f"Output/dialogue_{i}.wav")
 combined_audio.export(f"Output/{file_name}.wav", format="wav")

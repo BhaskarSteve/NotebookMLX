@@ -13,7 +13,7 @@ NotebookLM's podcast generation feature for macOS, running locally powered by ML
 
 1. **Clone the repository:**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/BhaskarSteve/NotebookMLX.git
    cd NotebookMLX
    ```
 
